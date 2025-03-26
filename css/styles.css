@@ -53,7 +53,6 @@ h3 {
 
 .wrapper {
   max-width: 1200px;
-  padding: 2rem;
 }
 
 header {
@@ -75,6 +74,12 @@ header {
 
 img {
   max-width: 100%;
+}
+
+.our-cofee img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--color-light-blue);
 }
 
 nav {
@@ -110,6 +115,15 @@ nav li a {
   padding: 3rem;
 }
 
+.co-parent {
+  /*grid*/
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: var(--color-light-blue);
+  padding: 3rem;
+}
+
 .button {
   display: inline-block;
   background-color: var(--color-catalina);
@@ -124,7 +138,7 @@ nav li a {
   border-top-color: var(--color-sunglow);
   border-top-width: 5px;
   border-top-style: solid;
-  border-bottom-color: var(--color-sunglow);
+  border-bottom-color: var(--color-light-blue);
   border-bottom-width: 5px;
   border-bottom-style: solid;
   background-color: var(--color-white);
@@ -132,11 +146,14 @@ nav li a {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 0;
 }
 
+.parent {
+  background-color: var(--color-light-blue);
+}
 .coffee-computer {
   display: flex;
   align-items: center;
@@ -158,8 +175,25 @@ nav li a {
   text-decoration: none;
 }
 
+.latte img {
+  border-radius: var(--border-radius);
+}
+
+.hot-chocolate img {
+  border-radius: var(--border-radius);
+}
+
+.iced-coffee img {
+  border-radius: var(--border-radius);
+}
+
+.coffee img {
+  border-radius: var(--border-radius);
+}
+
 .footer {
   text-align: center;
+  color: white;
 }
 
 @media (min-width: 650px) {
@@ -167,6 +201,11 @@ nav li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .co-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .top-grid {
     grid-column: span 2;
   }
@@ -175,9 +214,18 @@ nav li a {
   }
 }
 @media (min-width: 1000px) {
+  .wrapper {
+    max-width: 1200px;
+    padding: 2rem;
+  }
   .parent {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .co-parent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .top-grid {
     grid-column: span 4;
   }

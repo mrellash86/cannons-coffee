@@ -116,6 +116,7 @@ nav li a {
 
 .top-grid {
   /*grid inside of grid*/
+  background-color: white;
   border-top-color: var(--color-sunglow);
   border-top-width: 5px;
   border-top-style: solid;
@@ -138,6 +139,10 @@ nav li a {
   gap: 20px;
 }
 
+.coffee-and-code-white-bg {
+  background-color: white;
+}
+
 .text-content {
   display: flex;
   flex-direction: column;
@@ -155,6 +160,7 @@ nav li a {
 
 .footer {
   text-align: center;
+  color: white;
 }
 
 @media (min-width: 1000px) {
