@@ -153,6 +153,9 @@ nav li a {
 
 .parent {
   background-color: var(--color-light-blue);
+  border-bottom-color: var(--color-sunglow);
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
 }
 .coffee-computer {
   display: flex;
