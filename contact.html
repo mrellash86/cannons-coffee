@@ -26,17 +26,56 @@
               <a href="https://www.doshihouse.com/" target="_blank">About</a>
             </li>
             <li>
-              <a href="mailto:e.ash.contact@gmail.com" target="_blank"
-                >Contact</a
-              >
+              <a href="contact.html" target="_blank">Contact</a>
             </li>
+            <li><a href="cart.html" target="_blank">Cart</a></li>
           </ul>
         </nav>
       </header>
       <h2>Contact Cannons Coffee</h2>
       <p>Coming Soon!</p>
 
+      <!-- Contact Form -->
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <label for="comments">Comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <label for="flavor">Favorite Coffee Flavor:</label><br />
+        <select id="flavor" name="flavor">
+          <option value="espresso">Espresso</option>
+          <option value="latte">Latte</option>
+          <option value="cappuccino">Cappuccino</option></select
+        ><br /><br />
+
+        <p>Are you interested in:</p>
+        <input
+          type="radio"
+          id="buying"
+          name="interest"
+          value="buying"
+          required
+        />
+        <label for="buying">Buying Coffee</label><br />
+        <input
+          type="radio"
+          id="employment"
+          name="interest"
+          value="employment"
+        />
+        <label for="employment">Seeking Employment</label><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
 
       <footer class="footer">
         <div class="footer-content">
@@ -49,7 +88,6 @@
         </div>
       </footer>
     </div>
-    </div>
-  <script src="js/custom.js"></script>
-</body>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
