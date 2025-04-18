@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const messageContainer = document.createElement("p");
       messageContainer.textContent = `Thanks ${name} for reaching out! Be on the lookout for a confirmation email from us and someone will reach out!`;
 
-      // Append the message to the form's parent container
       form.parentNode.appendChild(messageContainer);
 
       // Clear the form
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Code for the login form on cart.html
+  // cart.html
   const loginForm = document.querySelector(".login-form");
   if (loginForm) {
     loginForm.addEventListener("submit", (event) => {
